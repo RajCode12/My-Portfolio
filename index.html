@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7b06403e6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-------------Home---------------->
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="Images/name.png" class="name">
+      <ul id="sidemenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav> 
+    <div class="header-text">
+      <p>Fresher</p>
+      <h1>Hi, I'm <span>Raj</span><br>Kumar From India</h1>
+    </div>
+    <a href="Images/Raj's Resume.pdf" download class="btn btn2">Download CV</a>
+  </div>
+</div>
+<!--------------About-------------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+        <img src="Images/photo1.png">
+      </div>
+      <div class="col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Software engineer graduate in
+          computer science and a talent for problem-solving. 
+          Experienced in problem-solving using Java and DSA, 
+          as well as creating websites. Demonstrated 
+          ability to quickly learn new technologies and adapt to 
+          evolving project requirements. Skilled in working independently 
+          or as part of a team to deliver high-quality software solutions</p>
+        <div class="tab-title">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+            <li><span>Web Development</span><br>Designing Website</li>
+            <li><span>Code Debugging</span><br>Problem Solving</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2023 - Current</span><br>Designing Web/App Interfaces</li>
+            <li><span>2022</span><br>Designing Web Development</li>
+            <li><span>2021</span><br>Problem Solving</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Ongoing</span><br>LPU, Phagwara, Punjab</li>
+            <li><span>2020</span><br>IIPS, Patna, Bihar</li>
+            <li><span>2018</span><br>BVV, Gopalgang, Bihar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------------Services-------------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Problem Solving</h2>
+        <p>ehk dfksfdsk dfkjdskf   sdakffskoj dskoffdsk dsksfdsk dskfklds dsndkn dsfkdskn dskdskndf fdskfdk dskifjsd.</p>
+        <a href=""#>Learn more</a>
+      </div>
+      <div>
+        <i class="fa-sharp fa-solid fa-crop"></i>
+        <h2>Web Design</h2>
+        <p>ehk dfksfdsk dfkjdskf   sdakffskoj dskoffdsk dsksfdsk dskfklds dsndkn dsfkdskn dskdskndf fdskfdk dskifjsd.</p>
+        <a href=""#>Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i> 
+        <h2>App Development</h2>
+        <p>ehk dfksfdsk dfkjdskf   sdakffskoj dskoffdsk dsksfdsk dskfklds dsndkn dsfkdskn dskdskndf fdskfdk dskifjsd.</p>
+        <a href=""#>Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------symbols from fontawesome----------->
+<!-----------------------------Portfolio---------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="Images/phone1.png">
+        <div class="layer">
+          <h3>University App</h3>
+          <p>This website is my personal portfolio website using html css and javascript.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/phone2.png">
+        <div class="layer">
+          <h3>Metro App</h3>
+          <p>This is backend project made by me using java, data structures and algorithms.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/phone3.png">
+        <div class="layer">
+          <h3>Personal Website</h3>
+          <p>This is backend project made by me using java, data structures and algorithms.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!----------------------------Contact------------------------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>rjg64331@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i></i>6204425860</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/raj-kumar-454426218/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/RajCode12"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Raj. Made with <i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for(tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemeu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemeu.style.right = "0";
+  }
+  function closemenu() {
+    sidemeu.style.right = "-200px";
+  }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwA0l8Yn4pWbO4dzUuF0N0o3n9a5_Vx6NfxRllISMfhhwHSRw7sGR7gkoittw5QAnfZ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
